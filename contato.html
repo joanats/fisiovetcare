@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Uma página sobre o curso de Medicina Veterinária">
+    <title>FISIOVETCARE | Fisioterapia Veterinária</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="icon" type="image/png" href="favicon/favicon.ico">
+</head>
+
+<body>
+    <header class="cabeçalho">
+        <img class="cabeçalho-img" src="img/logo.png" alt="logo da marca"> <br>
+        <h1 class="cabeçalho-titulo">FisioVetCare</h1> <br>
+        <nav class="cabeçalho-menu">
+            <a class="cabeçalho-menu-item" href="index.html">Home</a>
+            <a class="cabeçalho-menu-item" href="servicos.html">Serviços</a>
+            <a class="cabeçalho-menu-item" href="sobrenos.html">Sobre Nós</a>
+            <a class="cabeçalho-menu-item" href="contato.html">Contato</a>
+            <a class="cabeçalho-menu-item" href="faq.html">FAQ</a>
+        </nav>
+    </header>
+
+    <main class="conteudo">
+        <section class="conteudo-principal">
+            <div class="conteudo-principal-escrito">
+                <h1 class="conteudo-principal-escrito-titulo">FISIOVETCARE | Fisioterapia Veterinária</h1>
+                <h2 class="conteudo-principal-escrito-subtitulo">Proporcionando cuidado compassivo e especializado para a saúde e bem-estar dos seus animais de estimação.</h2>
+            </div>
+            <img class="conteudo-principal-img" src="img/capacontato.png" alt="capa">
+        </section>
+        
+        <!-- Aqui foi utilizado a mesma classe do "servicos.html" -->
+
+        <div class="container">
+            <h1 class="servico-titulo">Fala com a gente!</h1>
+            <div class="servico">
+                <p>Estamos ansiosos para ouvir de você! Se você tiver alguma dúvida, quiser marcar uma consulta ou simplesmente desejar mais informações sobre nossos serviços de fisioterapia veterinária, entre em contato conosco hoje mesmo. 
+                    Nossa equipe simpática e experiente está à disposição para ajudar você e seu animal de estimação. Você pode nos contatar por telefone, e-mail ou preenchendo o formulário de contato abaixo. Estamos ansiosos para conhecê-lo e começar a trabalhar juntos para promover a saúde e o bem-estar do seu amado companheiro peludo.</p>
+            </div>
+        </div>
+        <section id="contato">
+           <br> <h2 class="contato-tittle">Entre em Contato</h2> <br>
+
+         <div class="contato-texto">
+            <p> Para agendar uma consulta ou obter mais informações sobre nossos serviços, entre em contato conosco pelo formulário abaixo:</p>
+            <form>
+                <label for="nome">Nome:</label>
+                <input type="text" id="nome" name="nome" required>
+        
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+        
+                <label for="mensagem">Mensagem:</label>
+                <textarea id="mensagem" name="mensagem" required></textarea>
+        
+                <button type="submit">Enviar</button>
+            </form>
+         </div>
+           
+        </section>
+        
+    </main>
+
+    <footer>
+        <div class="rodape">
+            <p>&copy; 2024 AboutMedvet. Todos os direitos reservados.</p>
+        </div>
+    </footer>
+</body>
+
+</html>

@@ -1,0 +1,352 @@
+@import url('https://fonts.googleapis.com/css2?family=Baloo+2:wght@400..800&family=Baloo+Thambi+2:wght@400..800&display=swap') ;
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+body {
+    font-size: 100% ;
+    background: linear-gradient(68.15deg, #2F2325 16.62%, #792877 85.61%);
+}
+
+.cabeçalho {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    padding: 24px;
+}
+
+.cabeçalho-titulo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: 10px;
+    color:#ffffff;
+    font-size: 60px;
+    font-family: "Baloo Thambi 2", system-ui;
+    padding: 20px;
+
+   
+}
+.cabeçalho-img {
+    height: 90px; /*tamanho da logo*/
+    margin-right: -32%; /*valor negativo unico que deu certo :( */ 
+        filter: drop-shadow(0 4px 10px rgba(0, 0, 0, 0.5)); /*sombra contornada*/
+}
+
+.cabeçalho-menu {
+    display: flex;
+    gap: 32px;  /* Distanciamento dos elementos da tag */
+    font-family: "Sarala", sans-serif; /* Fonte para os parágrafos */
+    font-weight: 600;
+    font-size: 22px;
+}
+
+.cabeçalho-menu a {
+    color: #ffffff; 
+    transition: color 0.3s; 
+    text-decoration: none; 
+}
+
+.cabeçalho-menu a:hover,
+.cabeçalho-menu a:visited,
+.cabeçalho-menu a:focus {
+    color: #bae3f1; /* Cor dos links quando hover, visitado ou focado */
+    cursor: pointer;
+}
+
+
+.conteudo {
+    margin-bottom: 48px;
+    border-top: 0.4px solid #ffffff; /*borda para o topo*/
+}
+
+.conteudo-principal {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.conteudo-principal-escrito {
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+}
+
+.conteudo-principal-escrito-titulo {
+    font-family: "Baloo Thambi 2", system-ui;
+    font-weight: 700;
+    font-size: 60px;
+    color: #ffffff;
+}
+
+.conteudo-principal-escrito-subtitulo {
+    font-family: "Sarala", sans-serif; /*fonte para os paragrafos*/
+    color: azure;
+    font-weight: 400;
+    font-size: 22px;
+}
+
+.conteudo-principal-img {
+    height: 450px;
+    filter: drop-shadow(0 4px 10px rgba(0, 0, 0, 0.5)); /* sombra contornada*/
+}
+
+.conteudo-secundario {
+    display: flex;
+    flex-direction: column; /*coluna para as palavras*/
+    align-items: center;
+    gap: 24px; /*espaçamento entre as linhas*/
+    margin-top: 48px; /*distancia do conteudo secundario para o primario*/
+    justify-content: space-around;
+    padding: 20px;
+    padding-left: 710px;
+    padding-right: 710px;
+
+}
+
+.conteudo-secundario-titulo {
+    border-top: 0.4px solid #fff2ef;
+    padding-top: 48px; /*conteudo dentro dele foi pra baixo*/
+    font-family: "Baloo Thambi 2", system-ui;
+    font-weight: 700;
+    font-size: 35px;
+    color: #ffffff;
+    margin-bottom: 16px;
+}
+
+.conteudo-secundario-botao {
+    background-color: rgb(186, 227, 241);
+    width: 180px;
+    height: 60px;
+    border: none;
+    box-shadow: 4px 5px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 20px; /*borda do botão*/
+    font-family: "Sarala", sans-serif; /*fonte para os paragrafos*/
+    color: #ffffff;
+    font-weight: 400;
+    font-size: 18px;
+    color: #2F2325;
+    white-space: nowrap; /* Evita que o texto quebre em várias linhas */
+    line-height: 60px; /* Centraliza verticalmente */
+    text-align: center; /* Centraliza horizontalmente */
+    padding: 10px; /* Adiciona espaçamento interno */
+}
+
+.conteudo-secundario-botao:hover {
+    background-color: #fff2ef;
+    cursor: pointer;
+}
+
+.conteudo-secundario-paragrafo {
+    font-family: "Sarala", sans-serif; /*fonte para os paragrafos*/
+    color: azure;
+    font-weight: 300;
+    font-size: 18px;
+    color: azure
+    
+}
+
+/* Estilos gerais */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+/* Estilo para a sessão do blog */
+.blog-session {
+    padding: 20px;
+}
+
+/* Estilo para o contêiner do blog */
+.blog-container {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+/* Estilo para o cabeçalho do blog */
+.blog-header {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.blog-header h2 {
+    font-size: 36px;
+    color: #ffffff;
+    margin-bottom: 10px;
+}
+
+.blog-header p {
+    color: #ffffff;
+}
+
+/* Estilo para as postagens do blog */
+.blog-posts {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-gap: 20px;
+}
+
+/* Estilo para uma única postagem do blog */
+.blog-post {
+    background-color: #92c8e0;
+    border-radius: 8px;
+    padding: 20px;
+    display: flex; 
+    align-items: center; 
+    flex-direction: column; 
+}
+
+.blog-img {
+    width: 100%;
+    max-width: 600px; 
+    border-radius: 8px;
+    margin-bottom: 10px;
+    filter: drop-shadow(0 4px 10px rgba(0, 0, 0, 0.5)); /* sombra contornada*/
+
+    
+}
+
+.blog-post h3 {
+    font-size: 24px;
+
+    color: white;
+    margin-bottom: 10px;
+}
+
+.blog-post p {
+    color: #000000;
+    margin-bottom: 15px;
+}
+
+.blog-post a {
+    color: #5919a2;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.blog-post a:hover {
+    text-decoration: underline;
+}
+
+/*css serviços start*/
+
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    color: #ffffff;
+
+}
+
+.servico-titulo {
+    text-align: center;
+    margin-bottom: px;
+    color: #ffffff;
+    height: 100px;
+    font-family: "Baloo Thambi 2", system-ui;
+    font-weight: 700;
+    font-size: 45px;
+}
+
+.servico {
+    margin-bottom: 30px;
+}
+
+.servico h2 {
+    margin-bottom: 10px;
+    color: #ffffff;
+    font-weight: 700;
+    font-size: 45px;
+    font-family: "Baloo Thambi 2", system-ui;
+
+}
+
+.servico p {
+    line-height: 1.6;
+    font-family: "Sarala", sans-serif; /*fonte para os paragrafos*/
+    color: azure;
+    font-weight: 300;
+    font-size: 22px;
+}
+
+/* css serviços end*/
+
+/* sessão contato start*/
+
+#contato {
+    text-align: center;
+    color: white;
+}
+
+.contato-tittle{
+    font-weight: 700;
+    font-size: 45px;
+    font-family: "Baloo Thambi 2", system-ui;
+
+}
+
+.contato-texto{
+
+    font-family: "Sarala", sans-serif; /*fonte para os paragrafos*/
+    color: azure;
+    font-weight: 300;
+    font-size: 22px;
+}
+#contato form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+
+}
+
+#contato label {
+    margin-top: 10px;
+    display: block;
+}
+
+#contato input[type="text"],
+#contato input[type="email"],
+#contato textarea {
+    width: 30%;
+    padding: 10px;
+    margin-top: 5px;
+    margin-bottom: 15px;
+    box-sizing: border-box;
+    border: 1px solid #fff; /* borda branca */
+    border-radius: 4px;
+    background-color: #b8e4f7; 
+    color: white; 
+}
+
+#contato button[type="submit"] {
+    background-color: #fff; 
+    color: #000000; 
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+#contato button[type="submit"]:hover {
+    background-color: #92c8e0;
+}
+
+/* sessão contato end*/
+
+
+.rodape {
+    padding: 34px;
+    color: #fff2ef;
+    text-align: center;
+    border-top: 0.4px solid #fff2ef;
+}
+
